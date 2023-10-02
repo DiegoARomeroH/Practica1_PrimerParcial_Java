@@ -42,8 +42,8 @@ public class MayorVal {
         System.out.println();
         System.out.println("El valor mínimo es: " + min);
         System.out.println();
-        System.out.println("Hay " + pares + " valores pares en el arreglo.");
+        System.out.println("Hay un total de " + pares + " valores pares en el arreglo.");
         System.out.println();
-        System.out.println("Hay " + impares + " valores impares en el arreglo.");
+        System.out.println("Hay un total de " + impares + " valores impares en el arreglo.");
     }
 }
