@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class HeapSort {
     public static void sort(int arr[]) {
         int n = arr.length;
@@ -56,7 +58,17 @@ public class HeapSort {
     }
 
     public static void main(String args[]) {
-        int arr[] = {12, 11, 13, 5, 6, 7};
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese la cantidad de elementos en el arreglo: ");
+        int n = scanner.nextInt();
+
+        int arr[] = new int[n];
+
+        System.out.println("Ingrese los elementos del arreglo:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
 
         System.out.println("Arreglo original:");
         printArray(arr);
@@ -65,5 +77,7 @@ public class HeapSort {
 
         System.out.println("Arreglo ordenado:");
         printArray(arr);
+
+        scanner.close();
     }
 }
